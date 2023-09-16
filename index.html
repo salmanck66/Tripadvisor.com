@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor: Over A Billion Reviews And Contributions For Hotels,Attractions,Restaurents and more</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" id="favicon" href="https://static.tacdn.com/favicon.ico?v2" type="image/x-icon">   
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Nav-Bar -->
+    <div class="header">
+    <nav>
+        <header>
+        <img class="logo" src="./images/Logo.svg" alt="">
+        <ul>
+            <li><a href=""><button><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.288 6.793L6.69 14.368l-.816 3.746 3.724-.839 7.588-7.583-2.9-2.9zm3.96 1.84l-2.898-2.9.556-.554A2.318 2.318 0 0117.52 4.5c.378 0 .73.104 1.031.315l.01.007.012.008c1.12.757 1.221 2.26.326 3.151l-.65.651zm-7.896 10.01l-5.99 1.35C4.34 20 4.319 20 4.298 20a.297.297 0 01-.29-.36l1.31-6.023 9.529-9.5A3.818 3.818 0 0117.52 3c.66 0 1.318.184 1.893.587a3.536 3.536 0 01.546 5.457l-9.607 9.599z" class=""></path></svg>Review</button></a></li>
+            <li><a href=""><button><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.798 5.786A5.769 5.769 0 017.72 4.25c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.769 5.769 0 013.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.599 2.324 1.569 3.662-.03 1.323-.578 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a183.566 183.566 0 01-3.153 2.785l-.069.059-.489-.569.49.569-.486.416-.488-.412a101.98 101.98 0 01-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453l.002-.002zm8.19 13.226a174.415 174.415 0 002.708-2.4c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.148-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.269 4.269 0 00-2.904-1.138 4.269 4.269 0 00-2.903 1.136l-1.35 1.292-1.375-1.3a4.269 4.269 0 00-2.9-1.133 4.269 4.269 0 00-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a100.45 100.45 0 007.127 6.742z" class=""></path></svg>Trips</button></a></li>
+            <li><a href=""><button><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25a.75.75 0 01.75.75v1.283c1.865.168 3.412.964 4.529 2.218 1.254 1.409 1.922 3.343 1.956 5.487.013.811.015 4.106.015 5.762H21v1.5h-5.336c-.063.31-.172.694-.368 1.085-.232.464-.592.951-1.146 1.32-.558.372-1.269.595-2.15.595s-1.592-.223-2.15-.595a3.382 3.382 0 01-1.146-1.32 4.378 4.378 0 01-.368-1.085H3v-1.5h1.75c0-1.651.002-4.932.015-5.755C4.76 9.843 5.43 7.907 6.694 6.5 7.82 5.245 9.384 4.45 11.25 4.283V3a.75.75 0 01.75-.75zm-5.75 15.5h11.5c0-1.657-.002-4.94-.015-5.738-.03-1.856-.604-3.422-1.576-4.513C15.196 6.418 13.799 5.75 12 5.75c-1.8 0-3.218.67-4.19 1.751-.98 1.09-1.552 2.651-1.545 4.496v.015a748.17 748.17 0 00-.015 5.738zm3.632 1.5c.04.135.094.276.164.415.143.286.346.549.636.742.285.19.7.343 1.318.343.619 0 1.033-.152 1.318-.343.29-.193.493-.456.636-.742a2.7 2.7 0 00.164-.415H9.883z" class=""></path></svg>Alerts</button></a></li>
+            <li><a href=""><button id="sign-in">Sign in</button></a></li>
+            <li><a href=""><button><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 4.75H2v-1.5h2.5c.779 0 1.354.398 1.71.844.339.423.54.959.54 1.406v.25h14.71l-1.874 7.5H6.75v1.25c0 .29.164.76.475 1.175.327.436.632.575.775.575h9a2.75 2.75 0 11-2.45 1.5h-3.1a2.75 2.75 0 11-4.645-.407c-.314-.219-.578-.499-.78-.768-.439-.585-.775-1.365-.775-2.075v-9a.95.95 0 00-.21-.469c-.144-.179-.319-.281-.54-.281zm4.5 13a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm8 0a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm-10.25-6h11.664l1.125-4.5H6.75v4.5z" class=""></path></svg>Basket</button></a></li>
+        </ul>
+        </header>
+    </nav>
+    </div>
+
+    <!-- Secondary-Menu -->
+    <div class="s-menu">
+        <div class="s-menu-items">
+            <ul>
+                <li><button class="s-menu-button">Hotels <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.832 5.228c0-.469.38-.85.85-.85h15.624c.47 0 .85.381.85.85v6.65c.68.561 1.22 1.392 1.22 2.543v4.847h-1.5v-1.673H3.284v1.673h-1.5V14.394c.025-.655.304-1.589 1.049-2.351V5.228zm2.634 5.587c.264-.034.542-.051.837-.051h3.896c-.503-.483-1.31-.931-2.433-.931-1.09 0-1.83.467-2.3.982zm7.39-.051h4.468l.036.003c.161.016.343.042.536.082a2.36 2.36 0 00-.221-.233c-.447-.41-1.18-.783-2.254-.783-1.078 0-1.751.273-2.181.584a2.395 2.395 0 00-.385.347zm5.8-1.283c-.726-.651-1.812-1.148-3.235-1.148-1.347 0-2.339.347-3.06.868-.342.248-.61.525-.821.802-.736-.86-2.005-1.67-3.774-1.67-1.629 0-2.733.712-3.434 1.503V5.878h14.324v3.603zM3.283 16.095h16.594V14.42c0-.703-.355-1.188-.888-1.545-.56-.374-1.263-.561-1.74-.612H6.304c-1.118 0-1.81.316-2.237.677-.57.482-.765 1.123-.783 1.496v1.658z"></path></svg></button></li>
+                <li><button class="s-menu-button">Things To Do<svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 5.25h19.5v4.454l-.536.16a2.752 2.752 0 000 5.272l.536.16v4.454H2.25v-4.454l.536-.16a2.752 2.752 0 000-5.272l-.536-.16V5.25zm1.5 1.5v1.876a4.25 4.25 0 010 7.748v1.876h16.5v-1.876a4.25 4.25 0 010-7.748V6.75H3.75z" class=""></path><path d="M12 15a1 1 0 110 2 1 1 0 010-2zM12 11.5a1 1 0 110 2 1 1 0 010-2zM12 8a1 1 0 110 2 1 1 0 010-2z"></path></svg></button></li>
+                <li><button class="s-menu-button">Holiday Homes<svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path d="M3 21.2h-.75v.75H3v-.75zm0-12l-.416-.624-.334.223V9.2H3zm9-6l.416-.624L12 2.299l-.416.277L12 3.2zm9.01 6h.75v-.402l-.334-.222-.416.624zm0 12v.75h.75v-.75h-.75zm-17.26 0v-12h-1.5v12h1.5zM3.416 9.824l9-6-.832-1.248-9 6 .832 1.248zm8.168-6l9.01 6 .832-1.248-9.01-6-.832 1.248zM20.26 9.2v12h1.5v-12h-1.5zm.75 11.25H3v1.5h18.01v-1.5zM18 12.96h-6.99v1.5H18v-1.5zm-7.74.75c0 .69-.56 1.25-1.25 1.25v1.5a2.75 2.75 0 002.75-2.75h-1.5zm-1.25 1.25c-.69 0-1.25-.56-1.25-1.25h-1.5a2.75 2.75 0 002.75 2.75v-1.5zm-1.25-1.25c0-.69.56-1.25 1.25-1.25v-1.5a2.75 2.75 0 00-2.75 2.75h1.5zm1.25-1.25c.69 0 1.25.56 1.25 1.25h1.5a2.75 2.75 0 00-2.75-2.75v1.5zm5.24 1.25v3h1.5v-3h-1.5z" class="st-current"></path></svg></button></li>
+                <li><button class="s-menu-button">Restaurents<svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.798 5.141L17.47 2.47l1.06 1.06-2.671 2.672c-.679.679-1.055 1.462-1.12 2.199-.043.5.054 1.003.327 1.472L19.97 4.97l1.06 1.06-4.906 4.906c.473.281.974.387 1.466.354.718-.047 1.467-.394 2.096-1.023A905.812 905.812 0 0022.24 7.7l.226-.228 1.067 1.055-.228.23a1012.001 1012.001 0 01-2.559 2.57c-.849.849-1.927 1.384-3.057 1.459a4.027 4.027 0 01-2.647-.768l-1.231 1.231 7.72 7.72-1.061 1.06-5.97-5.97-3 3-1.75-1.75-4.72 4.72-1.06-1.06 4.72-4.72-4.392-4.391a4.75 4.75 0 010-6.718L5 4.44l7.75 7.75 1.232-1.232a3.971 3.971 0 01-.737-2.686c.1-1.147.67-2.246 1.553-3.13zM13.439 15L5.028 6.588a3.25 3.25 0 00.33 4.21L11.5 16.94 13.44 15z" class=""></path></svg></button></li>
+                <li><button class="s-menu-button">Travel Stories<svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.566 11.25h4.873c-.07-1.831-.397-3.448-.87-4.628-.268-.672-.57-1.165-.865-1.478-.25-.264-.458-.364-.62-.388H11.922c-.161.024-.37.124-.62.388-.296.313-.597.806-.866 1.478-.472 1.18-.798 2.797-.869 4.628zm-.133-6.027a8.259 8.259 0 00-.39.841c-.554 1.385-.907 3.198-.978 5.186H4.788a7.252 7.252 0 014.645-6.027zm2.393-1.965C7.078 3.348 3.25 7.226 3.25 12a8.744 8.744 0 008.747 8.75c4.833 0 8.753-3.918 8.753-8.75a8.741 8.741 0 00-8.57-8.742 2.079 2.079 0 00-.354 0zm2.746 1.965c.142.263.272.545.39.841.554 1.385.907 3.198.978 5.186h3.272a7.248 7.248 0 00-4.64-6.027zm4.64 7.527H15.94c-.071 1.988-.424 3.8-.977 5.185-.12.298-.25.581-.393.845a7.259 7.259 0 004.642-6.03zm-9.774 6.036a8.244 8.244 0 01-.395-.851c-.554-1.384-.907-3.197-.978-5.185H4.788a7.25 7.25 0 004.65 6.036zm5.001-6.036c-.07 1.83-.397 3.448-.87 4.628-.268.671-.57 1.164-.865 1.477-.295.312-.532.395-.701.395-.17 0-.407-.083-.701-.395-.297-.313-.598-.806-.867-1.477-.472-1.18-.798-2.797-.869-4.628h4.873z" class=""></path></svg></button></li>
+                <li>
+                    <div class="dropdown">
+                    <button id="drop-btn" class="s-menu-button">More
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP st-current" x="0" y="0"><circle cx="4.5" cy="11.9" r="2.5"></circle><circle cx="19.5" cy="11.9" r="2.5"></circle><circle cx="12" cy="11.9" r="2.5"></circle></svg>
+                </button>
+                        <div class="dropdown-content">
+                            <a href="#">Add a Place</a>
+                            <a href="#">Airlines</a>
+                            <a href="#">Flights</a>
+                            <a href="#">Help Centre</a>
+                            <a href="#">Travel Forums</a>
+                            <a href="#">Travellers Choice</a>   
+                          </div> 
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Search Tab -->
+    <div class="search">
+        <div >
+        <img id="mainim" src="./images/mainim.webp" alt="">
+    </div>
+    </div>  
+    <div class="searchbar">
+        <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.74 3.75a5.99 5.99 0 100 11.98 5.99 5.99 0 000-11.98zM2.25 9.74a7.49 7.49 0 1113.3 4.728l5.44 5.442-1.06 1.06-5.44-5.439A7.49 7.49 0 012.25 9.74z" class=""></path></svg>
+        <input type="search" placeholder="Where to?">
+    </div>
+
+
+
+    <!-- tripadv foundation -->
+    <div class="tripv-parent">
+        <div class="tripv2box">
+            <img src="./images/Donate.jpg" alt="">
+        </div>
+        <div class="tripv2box">
+            <div id="bothc0" class="tripv2box-con"><img src="./images/tpl.svg" alt="">
+                <div class="tripadv">&nbsp;Tripadvisor Foundation</div>
+            </div>
+            <div class="tripv2box-con">
+                <h2>Help Maui & others <br> around the world</h2>
+            </div>
+            <div class="tripv2box-con">
+                <p>The Tripadvisor Foundation is matching donations <br>to World Central Kitchen’s Climate Disaster Fund. <br> Your support helps disaster responses not only in <br> Maui, but worldwide.</p>
+            </div>
+            <div class="tripv2box-con">
+                <button type="button" class="btn-donate">Donate now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+<!-- ways to kochi -->
+    <div class="ways">
+        <h2>Top Things to Do by Category</h2>
+        <h3>Travellers' Choice Best Of The Best Winners</h3>
+
+    </div>
+
+<!-- corousal -->
+
+    <div class="coro-parent">
+        <div class="coro-box"><img class="ooo" src="./images/cap1.jpg" alt="">
+            <div class="coro-text"><h2>Top Overall</h2></div>
+        </div>
+        <div class="coro-box"><img src="./images/cap2.jpg" alt="">
+            <div class="coro-text"> <h2>Bucket List</h2></div>
+        </div>
+        
+        <div class="coro-box"><img src="./images/cap3.jpg" alt="">
+            <div class="coro-text">  <h2>Food & Culinary</h2></h2></div>
+        </div>
+        <div class="coro-box"><img src="./images/cap4.jpg" alt="">
+            <div class="coro-text"><h2>Nature & Outdoor</h2></div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <!-- Way to kochi -->
+    <div class="ways">
+        <h2>Ways to tour Kochi (Cochin)</h2>
+        <h3>Book these experiences for a close-up look at Kochi (Cochin).</h3>
+
+    </div>
+
+    <!-- tour kochi -->
+
+    <div class="kochi-main">
+        <div class="kochi-child"><img src="./images/nc1.jpg" alt="">
+        <h2>Half Day Village Backwater Eco Country Boat Cruise :Group Tour from Fort Cochin</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹2,813 per adult</h3>
+        </div>
+        
+        <div class="kochi-child">
+        <img src="./images/nc2.jpg" alt="">
+        <h2>5 Days Private Kerala Tour Package by Saffron India Tours</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹24,000 per adult</h3>
+        </div>
+
+        <div class="kochi-child"><img src="./images/nc3.jpg" alt="">
+        <h2>Cochin City or Backwater Shore Excursions from Cruise Terminal</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹2,344 per adult</h3>
+        </div>
+        <div class="kochi-child"><img src="./images/nc4.jpg" alt="">
+        <h2>Adventure Tuk Tuk Tour in kochi - A Private Guided Tour with Hotel Pick up</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹1,193 per adult</h3>
+        </div>
+        <div cla></div>
+       
+    </div>
+
+    <div class="newsp"></div>
+
+    <!-- Way to kochi -->
+    <div class="ways">
+        <h2>Charming Asian cities to explore in autumn</h2>
+        <h3>Take advantage of the cooler weather and smaller crowds with these tours</h3>
+
+    </div>
+
+    <!-- ways asian -->
+    <div class="kochi-main">
+        <div class="kochi-child"><img src="./images/pc1.jpg" alt="">
+        <h2>Hidden Kyoto E-Biking tour</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹2,813 per adult</h3>
+        </div>
+        
+        <div class="kochi-child">
+        <img src="./images/pc2.jpg" alt="">
+        <h2>Osaka Food Tour (10 Delicious Dishes at 5 hidden Eateries)</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹4,347 per adult</h3>
+        </div>
+
+        <div class="kochi-child"><img src="./images/pc3.jpg" alt="">
+        <h2>Best DMZ 3rd Infiltration Tunnel Tour from Seoul (No Shopping)</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹6,952 per adult</h3>
+        </div>
+        <div class="kochi-child"><img src="./images/pc4.jpg" alt="">
+        <h2>Trip to Nami Island with Petite France & Italian Village, Garden of Morning Calm</h2>
+        <svg class="UctUV d H0 hzzSG" viewBox="0 0 128 24" width="68" height="12" aria-label=""><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform=""></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(26 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(52 0)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(78 0)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(104 0)"></path></svg>
+        <h3>from ₹7,646 per adult</h3>
+        </div>
+        
+       
+    </div>
+    <div class="newsp"></div>
+
+    <!-- more to expore -->
+    <div class="explore-banner">
+        <div class="explore-banner-1">
+            <h2>More to explore</h2>
+        </div>
+
+    <!-- inside-more-to-explore -->
+        <div class="explore-banner-2">
+
+            <div class="explore-subcontainer">
+            <img src="./images/exp1.jpg" alt="">
+            <h2>A local’s guide to Bangkok’s best art galleries, cocktail bars, and more</h2>
+            </div>
+
+            <div class="explore-subcontainer">
+            <img src="./images/exp2.jpg" alt="">
+            <h2>4 best hawker centers in Singapore—and what to eat there</h2>
+            </div>
+
+            <div class="explore-subcontainer">
+            <img src="./images/exp3.jpg" alt="">
+            <h2>Hong Kong is open to tourists—here's what you don't want to miss in 2023</h2>
+            </div>
+        </div>
+    </div>
+    <div class="newspa"></div>
+
+        <!-- dream your next trip -->
+        <div class="dream-head">
+            <h2>Dream Your Next Trip</h2>
+        </div>
+        <div class="ways">
+        <h2>Weekend getaways from Kochi (Cochin)</h2>
+        <h3>Explore what’s nearby</h3>
+        </div>
+
+        <div class="dream-parent">
+            <div class="dream-box"><img class="ooo" src="./images/get1.jpg" alt="">
+                <div class="coro-text"><h2>Bengaluru, India</h2></div>
+            </div>
+            <div class="dream-box"><img src="./images/get2.jpg" alt="">
+                <div class="dream-text" id="tvdnm"> <h2>
+                    Thiruvananthapuram (Trivandrum), India</h2></div>
+            </div>
+            
+            <div class="dream-box"><img src="./images/get3.jpg" alt="">
+                <div class="dream-text">  <h2>
+                    Coimbatore, India</h2></h2></div>
+            </div>
+            <div class="dream-box"><img src="./images/get4.jpg" alt="">
+                <div class="dream-text"><h2>
+                    Madurai, India</h2></div>
+            </div>
+        </div>
+
+        <div class="newspa"></div>
+
+
+        <!-- top destination -->
+        <div class="ways">
+            <h2>Top destinations for beach lovers</h2>
+            <h3>Recommended based on your activity</h3>
+            </div>
+    
+            <div class="dream-parent">
+                <div class="dream-box"><div class="imagee"><img class="ooo" src="./images/b1.jpg" alt=""></div>
+                    <div class="coro-text"><h2>
+                        Tulum, Mexico</h2></div>
+                </div>
+                <div class="dream-box"><img src="./images/b2.jpg" alt="">
+                    <div class="dream-text" > <h2 id="borabora">Bora Bora, French Polynesia</h2></div>
+                </div>
+                
+                <div class="dream-box"><img src="./images/b4.jpg" alt="">
+                    <div class="dream-text">  <h2>
+                        Tenerife, Spain</h2></h2></div>
+                </div>
+                <div class="dream-box"><img src="./images/b4.jpg" alt="">
+                    <div class="dream-text"><h2>
+                    Hawaii</h2></div>
+                </div>
+            </div>
+
+            <div class="newspa"></div>
+            <div class="rental-head">
+                <h2>Home Rentals Near You</h2>
+            </div>
+
+            <!-- rental near you -->
+            <div class="rent-main">
+                <div class="rent-child">
+                    <h2 id="ioo">We think you'd enjoy these homes for a quick trip out of town.</h2>
+                </div>
+                <div class="rent-child">
+                    <img src="./images/r1.jpg" alt="">
+                    <h2>Rentals in Kozhikode</h2>
+                    <h3>14 Rentals</h3>
+                </div>
+                <div class="rent-child">
+                    <img src="./images/r2.jpg" alt="">
+                    <h2>Rentals in Vagamon</h2>
+                    <h3>34 Rentals</h3>
+                </div>
+                <div class="rent-child">
+                    <img src="./images/e4.jpg" alt="">
+                    <h2>Rentals in Alappuzha</h2>
+                    <h3>191 Rentals</h3>
+                </div>
+            </div>
+
+            <div class="newspa"></div>
+
+            <!-- vellippa on bike -->
+            <div class="granpa">
+                <div class="granpaone">
+                    <img src="./images/kili.svg" alt="">
+                    <h2>Travellers' Choice <br>Best of the Best</h2>
+                    <h3>Our top 1% of places, stays, eats, and experiences—decided by you.</h3>
+                    <button type="button" class="btnn">See the winners</button>
+                
+                </div>
+
+
+
+                <div class="granpatwo">
+                    <img src="./images/vellippa.png" alt="">
+                </div>
+            </div>
+            <div class="newspa"></div>
+
+            <!-- footer -->
+
+            <div class="footer-main">
+                <div class="footer-sub">
+                    <a href=""><h2>About Tripadvisor</h2></a>
+                    <a href=""></a><h3>About Us</h3></a>
+                    <a href=""></a><h3>Press</h3></a>
+                    <a href=""></a><h3>Resources and Policies</h3></a>
+                    <a href=""></a><h3>Careers</h3></a>
+                    <a href=""></a><h3>Trust & Safety</h3></a>
+                    <a href=""></a><h3>Contact us</h3></a>
+                    <a href=""></a><h3>Accessibility Statement</h3></a>
+                </div>
+
+                <div class="footer-sub">
+                    <a href=""></a><h2>Explore</h2></a>
+                    <a href=""></a><h3>Add a Place</h3></a>
+                    <a href=""></a><h3>Join</h3></a>
+                    <a href=""></a><h3>Travellers' Choice</h3></a>
+                    <a href=""></a><h3>Help Centre</h3></a>
+                    <a href=""></a><h3>Travel Articles</h3></a>
+                   
+                </div>
+                <div class="footer-sub">
+                    <a href=""></a><h2>Do Business With Us</h2></a>
+                    <a href=""></a><h3>Owners & DMO/CVB</h3></a>
+                    <a href=""></a><h3>Sponsored Placements</h3></a>
+                    <a href=""></a><h3>Access our Content API</h3></a>
+                    <a href=""></a><h2>Get The App</h2></a>
+                    <a href=""></a><h3>iPhone App</h3></a>
+                    <a href=""></a><h3>Android App</h3></a>
+
+
+                </div>
+                <div class="footer-sub"></div>
+                <div class="footer-sub-big">
+                    <a href=""></a><h2>Tripadvisor Sites</h2></a>
+                    <a href=""></a><h3>Book tours and attraction tickets on Viator</h3></a>
+                </div>
+            </div>
+
+            <!-- footernext -->
+            <div class="footernext">
+                <div class="moongatext">
+                    <div class="moongaa"><img src="./images/moonga.svg" alt=""></div>
+                    
+                    <div class="moongaa-text"><h5> 2023 Tripadvisor LLC All rights reserved.</h5></div>
+                </div>
+                    <div class="moongaa-list">
+                        <ul>
+                            <a href=""><li>Terms of Use</li></a>
+                            <a href=""></a><li>Privacy and Cookies Statement</li></a>
+                            <a href=""><li>Cookie consent</li></a>
+                            <a href=""><li>Site Map</li></a>
+                        </ul>
+                    </div>
+                    <div class="moongaa-list-2">
+                        <ul>
+                            <a href=""><li>How the site works</li></a>
+                            <a href=""><li>Contact us</li></a>
+                        </ul>
+                    </div>
+
+            <div class="option">
+                <div class="form-ek">
+                <form>  
+                <select>  
+                <option value = "₹ INR"> ₹INR  
+                </option>  
+                <option value = "$ USD">$USD   
+                </option>  
+                </select>  
+                </form>  
+                </div>
+
+                <div class="form-do">
+                <form>  
+                <select>  
+                <option value = "INDIA"> INDIA
+                </option>  
+                <option value = "USA">USA 
+                </option>  
+                </select>  
+                </form>  
+                </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="lastdiv">
+                <div class="divone">
+                    <h3>This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select <br>the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</h3>
+                </div>
+                <div class="divtwo">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path d="M12.001 2.061C6.478 2.061 2 6.537 2 12.061c0 4.993 3.661 9.132 8.445 9.879v-6.99H7.89v-2.889h2.556l.001-2.203c0-2.506 1.484-3.896 3.769-3.896 1.095 0 2.23.21 2.23.21v2.445h-1.253c-1.242 0-1.639.777-1.639 1.568l.003 1.876h2.777l-.444 2.889h-2.333v6.99C18.34 21.192 22 17.054 22 12.061c0-5.524-4.477-10-9.999-10z"></path></svg>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path d="M2 18.1c2.2.2 4.3-.5 5.9-1.899-1.2-.101-3.6-2.4-4-2.9h1.6c-1.9-.5-3.2-2.2-3.2-4.1.6.099 1.2.299 1.7.499h.2C2.7 8.3 2.2 6 3.1 4.1c2.1 2.6 5.3 4.2 8.6 4.4V7.4c.1-2.2 2-4 4.2-4 .9 0 1.7.3 2.4.8.4.3.8.3 1.2.2l1.9-.7c-.4.9-.9 1.6-1.6 2.3.601-.1 1.3-.4 1.9-.5l.3.2c-.6.5-1.2 1.1-1.7 1.5-.1.3-.2.7-.2 1.1 0 1.9-.5 3.8-1.3 5.601A11.982 11.982 0 019.5 20.1c-2.4.2-4.9-.199-7-1.3l-.5-.7"></path></svg>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path d="M14.94 2.575c-.804-.458-1.839-.573-2.873-.573C6.547 2.001 2.06 6.488 2.06 12.009c0 4.142 2.53 7.821 6.327 9.317a12.03 12.03 0 010-2.876c.229-.806 1.149-4.946 1.149-4.946a3.169 3.169 0 01-.346-1.495c0-1.381.805-2.416 1.841-2.416.689 0 1.266.575 1.266 1.266v.115c-.229 1.15-.459 2.185-.806 3.334-.229.805.229 1.61 1.035 1.727h.461c1.726 0 3.104-1.841 3.104-4.602.116-2.186-1.609-4.025-3.795-4.025h-.346c-2.3-.116-4.255 1.724-4.37 4.14v.229c0 .805.229 1.609.689 2.301.115.114.115.229.115.229a6.646 6.646 0 00-.229 1.147c0 .229-.116.229-.347.116-1.265-.807-2.069-2.3-2.069-3.913 0-3.105 2.3-5.98 6.556-5.98 3.221-.115 5.98 2.3 6.096 5.521v.229c0 3.454-2.186 6.211-5.174 6.211-.922 0-1.729-.346-2.304-1.148 0 0-.459 1.955-.575 2.415-.345.92-.689 1.842-1.266 2.646 5.292 1.609 10.812-1.267 12.421-6.558C23.104 9.707 20.23 4.186 14.94 2.575z"></path></svg>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb UmNoP"><path d="M21.938 7.9c0-.8-.199-1.6-.5-2.4-.5-1.4-1.5-2.5-2.9-3-.799-.3-1.6-.4-2.4-.5h-4.099c-1.4 0-2.8 0-4.2.1-.8 0-1.6.2-2.3.5-1.3.5-2.4 1.5-2.9 2.8-.3.8-.5 1.6-.5 2.5 0 1.1-.1 1.4-.1 4.1-.1 1.4-.1 2.7 0 4.1 0 .801.2 1.601.5 2.4.5 1.3 1.6 2.4 2.9 2.9.8.3 1.6.399 2.4.5 1.4.1 2.8.1 4.2.1s2.8 0 4.099-.1c.801 0 1.602-.2 2.4-.5a5.17 5.17 0 002.9-2.9c.301-.8.398-1.6.5-2.4 0-1.1.1-1.399.1-4.1s-.1-3.1-.1-4.1zM20.137 16c0 .6-.1 1.3-.299 1.9-.301.898-1 1.6-1.9 1.898-.6.201-1.301.301-1.9.301-1.1 0-1.4.102-4 .102-1.3 0-2.7 0-4-.102-.6 0-1.2-.1-1.9-.3-.9-.3-1.6-1-1.9-1.899-.3-.601-.4-1.2-.4-1.9 0-1.1-.1-1.4-.1-4 0-1.3 0-2.7.1-4 .1-.6.2-1.3.3-1.9.3-.9 1-1.6 1.9-1.9.7-.2 1.3-.3 2-.3 1.1 0 1.4-.1 4-.1 1.3 0 2.701 0 4 .1.6 0 1.301.1 1.9.3.898.3 1.6 1 1.898 1.9.201.6.301 1.3.301 1.9 0 1.1.102 1.4.102 4-.001 2.6-.102 3-.102 4z"></path><path d="M12.138 6.9c-2.9 0-5.1 2.3-5.1 5.1s2.3 5.1 5.1 5.1 5.101-2.3 5.101-5.1-2.301-5.1-5.101-5.1zm0 8.4c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3c1.8 0 3.2 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3zM17.438 5.5c-.699 0-1.199.5-1.199 1.2s.5 1.2 1.199 1.2 1.199-.5 1.199-1.2-.5-1.2-1.199-1.2z"></path></svg>
+                </div>
+            </div>
+
+</body>
+</html>
